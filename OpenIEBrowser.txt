@@ -1,0 +1,15 @@
+package project1;
+
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class OpenIEBrowser {
+
+	public static void main(String[] args) {
+		
+		InternetExplorerDriver i1 = new InternetExplorerDriver();
+		i1.get("http://bbc.com");
+		i1.close();
+
+	}
+
+}
