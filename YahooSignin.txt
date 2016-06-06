@@ -1,0 +1,13 @@
+package project1;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class YahooSignin {
+
+	public static void main(String[] args) {
+	FirefoxDriver d1 = new FirefoxDriver();
+	d1.get("http://login.Yahoo.com ");
+	d1.close();
+	}
+
+}
