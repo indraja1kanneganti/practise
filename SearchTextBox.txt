@@ -1,0 +1,14 @@
+package project1;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SearchTextBox {
+
+	public static void main(String[] args) {
+	FirefoxDriver f1 = new FirefoxDriver();
+	f1.get("http://bbc.com");
+	f1.findElementByName("q").sendKeys("indraja");
+	
+	}
+
+}
