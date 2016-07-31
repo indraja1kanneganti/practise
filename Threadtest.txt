@@ -1,0 +1,40 @@
+// example on Thread count
+
+class MyThread extends Thread
+{
+public void run()
+{
+try {
+     for(int i=1; i<=10; i++) 
+//for(int each: i)
+{
+          System.out.println(getName() + "  "+ i);
+          sleep(10);
+          }
+     }catch(InterruptedException ie) { }
+ }
+}
+
+public class threadtest8
+{
+public static void main(String args[])
+{
+MyThread t1=new MyThread();
+MyThread t2=new MyThread();
+t1.setName("Ch1");
+t2.setName("Ch2");
+t1.start();
+t2.start();
+System.out.println("No.Of Threads  :"+ Thread.activeCount());
+try {
+     for(int i=1; i<=10; i++) {
+          System.out.println("Main	"+ i);
+          Thread.sleep(15);
+          }
+     } catch(InterruptedException ie) { }
+System.out.println("No.Of Threads  :"+ Thread.activeCount());
+}
+}
+
+
+Ex: ch1 
