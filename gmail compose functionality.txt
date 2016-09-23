@@ -1,0 +1,11 @@
+Test case for Gmail compose functionality:
+
+@ Regression 
+Scenario: Gmail compose functionality
+Given User log into the gmail
+When user click compose on the top left
+And user add recepients in the To field
+And user adds recepients in the cc and bcc fields
+And user adds the subject
+And user writes the message
+Then user clicks send at the bottom of the page
