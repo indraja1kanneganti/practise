@@ -1,0 +1,49 @@
+
+
+// program to create an ArrayList with Strings and perform various operations on it
+
+import java.util.*;
+
+public class ArrayListDemo
+{
+public static void main(String args[])
+{
+	//create ArrayList
+	ArrayList <String> a = new ArrayList <String>();
+
+	//add five objects
+	a.add("Apple");
+	a.add("Mango");
+	a.add("Orange");
+	a.add("Banana");
+	a.add("Grapes");
+
+	//display contents
+	System.out.println("Contents	: " + a );
+
+	//remove two objects
+	a.remove(3);
+	a.remove("Apple");
+
+	//display contents again
+	System.out.println("Contents	After Removing	: " + a );
+
+	//display its size
+	System.out.println("Size of ArrayList	: " + a.size() );
+
+	//extract eles using Iterator
+	//add an Iterator to ArrayList to retrieve eles
+	Iterator i = a.iterator();
+
+	while(i.hasNext())
+	{
+		System.out.println( i.next() );
+		}
+}
+}
+
+
+
+LinkedList Class
+---------------------
+A LinkedList contains a group of elements in the form of nodes. Each node will have three fields - the data field contains data and the link fields contain references to previous and next nodes.
