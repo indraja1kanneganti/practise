@@ -1,0 +1,43 @@
+package javaBasics;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestExampleamazon {
+
+	public static void main(String[] args) {
+		
+		//open Fire fox
+		WebDriver d1=new FirefoxDriver();
+		
+		//give URL
+		d1.get("http://amazon.com");
+		
+		//type the email id in the text box
+		d1.findElement(By.id("ap_email")).sendKeys("kanneganti.indraja@gmail.com");
+		
+		//type the password in the Text box
+		d1.findElement(By.id("password")).sendKeys("9030706382");
+		
+		//click on sign in button
+		d1.findElement(By.id("signInSubmit")).click();
+		
+		//click on search button
+		d1.findElement(By.id("twotabsearchtextbox")).click();
+		
+		//verifying that products are: sorted correctly in a browser, products have a name, products have price,and products have image 
+		
+		
+		
+		d1.findElement(By.className("nav-input"));
+		d1.findElement(By.className("a-size-medium a-color-null s-inline s-access-title a-text-normal"));
+		d1.findElement(By.className("a-size-base a-color-price s-price a-text-bold"));
+		d1.findElement(By.className("s-access-image cfMarker"));
+			
+
+	     }
+
+		
+	}
+
